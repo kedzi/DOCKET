@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous"
+      />
+      <style>
+        body{
+        padding:0% 3% 10% 3%;
+        text-align:center;
+        }
+        h1{
+        color: #081d0e;
+        margin-top:30px;
+        }
+     
+        button{
+            cursor: pointer;
+            border: 1px solid rgb(19, 17, 17);
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }   
+        </style>
+      <title>keep</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <div class="heading">
+        <h1> To-do List</h1>
+      </div>
+    
+      <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <button onclick="myFunction()">Switch mode</button>
+        </div> 
+      <div class="btn-div">
+          <button class="learn-more" class="add" id="add">
+              <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Add Note</span>
+            </button>
+      </div>
+      <script src="script.js"></script>  
+     
+      <script>
+          function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark");
+          }
+      </script>
+  </body>
+  </html>
